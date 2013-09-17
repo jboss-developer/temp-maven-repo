@@ -1,1 +1,1 @@
-tree -H . -o index.html -C
+tree -H . -o index.html -C -P *.pom
