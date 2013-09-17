@@ -1,5 +1,0 @@
-Options SymLinksIfOwnerMatch Indexes
- 
-DirectoryIndex index.html
-IndexOptions FancyIndexing TrackModified IgnoreClient ScanHTMLTitles SuppressRules VersionSort IgnoreCase NameWidth=* DescriptionWidth=*
-
