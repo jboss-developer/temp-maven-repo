@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jboss.bom.jdg</groupId>
+    <artifactId>jboss-javaee-6.0-with-infinispan</artifactId>
+    <version>6.2.0-build-2</version>
+    <packaging>pom</packaging>
+
+    <name>JBoss Java EE 6 Specification APIs with Infinispan</name>
+    <description>Dependency Management for Java EE 6 Specification APIs with Infinispan</description>
+
+    <url>http://www.jboss.org</url>
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://issues.jboss.org/</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:jboss-developer/jboss-jdg-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:jboss-developer/jboss-jdg-bom.git</developerConnection>
+        <url>http://github.com/jboss-developer/jboss-jdg-bom</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>jboss.org</id>
+            <name>JBoss.org Community</name>
+            <organization>JBoss.org</organization>
+            <organizationUrl>http://www.jboss.org</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+         <!-- Versions of JBoss projects -->
+        <version.org.infinispan>6.0.0.CR1</version.org.infinispan>
+        <version.org.jboss.spec.jboss.javaee.6.0>3.0.2.Final</version.org.jboss.spec.jboss.javaee.6.0>
+         
+         <!-- Repository Deployment URLs -->
+        <jboss.releases.repo.url>
+            https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
+        </jboss.releases.repo.url>
+        <jboss.snapshots.repo.url>
+            https://repository.jboss.org/nexus/content/repositories/snapshots/
+        </jboss.snapshots.repo.url>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- JBoss distributes a complete set of Java EE 6 APIs including 
+                a Bill of Materials (BOM). A BOM specifies the versions of a "stack" (or 
+                a collection) of artifacts. We use this here so that we always get the correct 
+                versions of artifacts. Here we use the jboss-javaee-6.0 stack (you can read 
+                this as the JBoss stack of the Java EE 6 APIs), and we use version 3.0.2.Final 
+                which is the latest release of the stack. You can actually use this stack 
+                with any version of JBoss AS that implements Java EE 6, not just JBoss AS 
+                7! -->
+            <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-6.0</artifactId>
+                <version>${version.org.jboss.spec.jboss.javaee.6.0}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-core</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-client-hotrod</artifactId>
+                <version>${version.org.infinispan}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>${jboss.releases.repo.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>jboss-snapshots-repository</id>
+            <name>JBoss Snapshots Repository</name>
+            <url>${jboss.snapshots.repo.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.4</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
