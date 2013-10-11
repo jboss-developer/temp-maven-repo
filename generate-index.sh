@@ -1,1 +1,1 @@
-tree -H . -o index.html -C -P "*.pom|archetype-catalog.xml"
+tree -H . -o index.html -C -P "*.pom|*.jar|archetype-catalog.xml"
