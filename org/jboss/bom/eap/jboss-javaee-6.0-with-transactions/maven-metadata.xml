@@ -3,14 +3,15 @@
   <groupId>org.jboss.bom.eap</groupId>
   <artifactId>jboss-javaee-6.0-with-transactions</artifactId>
   <versioning>
-    <release>6.2.0-build-5</release>
+    <release>6.2.0-build-6</release>
     <versions>
       <version>6.2.0-build-1</version>
       <version>6.2.0-build-2</version>
       <version>6.2.0-build-3</version>
       <version>6.2.0-build-4</version>
       <version>6.2.0-build-5</version>
+      <version>6.2.0-build-6</version>
     </versions>
-    <lastUpdated>20130927154033</lastUpdated>
+    <lastUpdated>20131015202343</lastUpdated>
   </versioning>
 </metadata>
