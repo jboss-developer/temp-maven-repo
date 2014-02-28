@@ -197,8 +197,14 @@
     </archetype>
     <archetype>
       <groupId>org.jboss.archetype.wfk</groupId>
-      <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
-      <version>2.4.0-build-1</version>
+      <artifactId>jboss-html5-mobile-archetype</artifactId>
+      <version>2.5.0-build-4</version>
+      <description>jboss-javaee6-html5-mobile-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-html5-mobile-archetype</artifactId>
+      <version>2.5.0-build-4</version>
       <description>jboss-javaee6-html5-mobile-archetype</description>
     </archetype>
     <archetype>
@@ -210,6 +216,12 @@
     <archetype>
       <groupId>org.jboss.archetype.wfk</groupId>
       <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
+      <version>2.4.0-build-1</version>
+      <description>jboss-javaee6-html5-mobile-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
       <version>2.5.0-build-2</version>
       <description>jboss-javaee6-html5-mobile-archetype</description>
     </archetype>
@@ -229,6 +241,18 @@
       <groupId>org.jboss.archetype.wfk</groupId>
       <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
       <version>2.5.0-build-3</version>
+      <description>jboss-javaee6-html5-mobile-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
+      <version>2.5.0-build-4</version>
+      <description>jboss-javaee6-html5-mobile-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-html5-mobile-blank-archetype</artifactId>
+      <version>2.5.0-build-4</version>
       <description>jboss-javaee6-html5-mobile-archetype</description>
     </archetype>
     <archetype>
@@ -253,6 +277,18 @@
       <groupId>org.jboss.archetype.wfk</groupId>
       <artifactId>jboss-spring-mvc-archetype</artifactId>
       <version>2.5.0-build-3</version>
+      <description>getting-started</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-spring-mvc-archetype</artifactId>
+      <version>2.5.0-build-4</version>
+      <description>getting-started</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>jboss-spring-mvc-archetype</artifactId>
+      <version>2.5.0-build-4</version>
       <description>getting-started</description>
     </archetype>
     <archetype>
@@ -263,8 +299,20 @@
     </archetype>
     <archetype>
       <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>richfaces-archetype-kitchensink</artifactId>
+      <version>2.5.0-build-4</version>
+      <description>jboss-kitchensink-rf</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
       <artifactId>richfaces-archetype-simpleapp</artifactId>
       <version>2.5.0-build-3</version>
+      <description>richfaces-archetype-simpleapp</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.wfk</groupId>
+      <artifactId>richfaces-archetype-simpleapp</artifactId>
+      <version>2.5.0-build-4</version>
       <description>richfaces-archetype-simpleapp</description>
     </archetype>
   </archetypes>
