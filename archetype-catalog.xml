@@ -29,6 +29,18 @@
     </archetype>
     <archetype>
       <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>jboss-javaee6-webapp-src</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>jboss-javaee6-webapp-src</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
       <artifactId>jboss-javaee6-webapp-blank-archetype</artifactId>
       <version>6.2.0-build-1</version>
       <description>jboss-javaee6-webapp-src</description>
@@ -49,6 +61,18 @@
       <groupId>org.jboss.archetype.eap</groupId>
       <artifactId>jboss-javaee6-webapp-blank-archetype</artifactId>
       <version>6.2.0-build-2</version>
+      <description>jboss-javaee6-webapp-src</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-blank-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>jboss-javaee6-webapp-src</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-blank-archetype</artifactId>
+      <version>6.2.0-build-3</version>
       <description>jboss-javaee6-webapp-src</description>
     </archetype>
     <archetype>
@@ -77,6 +101,18 @@
     </archetype>
     <archetype>
       <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-ear-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>multi-javaee6-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-ear-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>multi-javaee6-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
       <artifactId>jboss-javaee6-webapp-ear-blank-archetype</artifactId>
       <version>6.2.0-build-1</version>
       <description>multi-javaee6-archetype</description>
@@ -97,6 +133,18 @@
       <groupId>org.jboss.archetype.eap</groupId>
       <artifactId>jboss-javaee6-webapp-ear-blank-archetype</artifactId>
       <version>6.2.0-build-2</version>
+      <description>multi-javaee6-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-ear-blank-archetype</artifactId>
+      <version>6.2.0-build-3</version>
+      <description>multi-javaee6-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.jboss.archetype.eap</groupId>
+      <artifactId>jboss-javaee6-webapp-ear-blank-archetype</artifactId>
+      <version>6.2.0-build-3</version>
       <description>multi-javaee6-archetype</description>
     </archetype>
     <archetype>
