@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.bom</groupId>
+        <artifactId>jboss-javaee7-eap</artifactId>
+        <version>7.0.0-build-8</version>
+    </parent>
+
+    <artifactId>jboss-javaee7-eap-with-spring4</artifactId>
+    <packaging>pom</packaging>
+
+    <name>JBoss EAP Java EE 7 Dependency Management with Spring 4</name>
+    <description>Dependency Management for Java EE 7 Specification APIs with Spring 4</description>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <!-- Versions of Spring Projects -->
+        <version.org.springframework>4.2.1.RELEASE</version.org.springframework>
+        <version.org.springframework.security>4.0.2.RELEASE</version.org.springframework.security>
+        <version.org.springframework.webflow>2.4.2.RELEASE</version.org.springframework.webflow>
+        <version.org.springframework.ws>2.2.2.RELEASE</version.org.springframework.ws>
+        
+        <!-- Versions of Spring Third Party dependencies -->
+        <version.aopalliance>1.0</version.aopalliance>
+        <version.org.aspectj>1.8.6</version.org.aspectj>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <!--  Spring 3rd party dependencies  -->
+            <dependency>
+                <groupId>aopalliance</groupId>
+                <artifactId>aopalliance</artifactId>
+                <version>${version.aopalliance}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${version.org.aspectj}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${version.org.aspectj}</version>
+            </dependency>
+
+            <!--  Spring Framework BOMs  -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${version.org.springframework}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-bom</artifactId>
+                <version>${version.org.springframework.security}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--  Spring WebFlow  -->
+            <dependency>
+                <groupId>org.springframework.webflow</groupId>
+                <artifactId>spring-binding</artifactId>
+                <version>${version.org.springframework.webflow}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.webflow</groupId>
+                <artifactId>spring-faces</artifactId>
+                <version>${version.org.springframework.webflow}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.webflow</groupId>
+                <artifactId>spring-js</artifactId>
+                <version>${version.org.springframework.webflow}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.webflow</groupId>
+                <artifactId>spring-js-resources</artifactId>
+                <version>${version.org.springframework.webflow}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.webflow</groupId>
+                <artifactId>spring-webflow</artifactId>
+                <version>${version.org.springframework.webflow}</version>
+            </dependency>
+
+            <!--  Spring WS  -->
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-ws-core</artifactId>
+                <version>${version.org.springframework.ws}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-ws-support</artifactId>
+                <version>${version.org.springframework.ws}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-ws-security</artifactId>
+                <version>${version.org.springframework.ws}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.xml.wsit</groupId>
+                        <artifactId>wsit-rt</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ws</groupId>
+                <artifactId>spring-xml</artifactId>
+                <version>${version.org.springframework.ws}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
